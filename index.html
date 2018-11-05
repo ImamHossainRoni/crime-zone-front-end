@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--creator Md.Imam Hossain Roni-->
+<html>
+<head>
+  <title>CrimeZone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="image/fav.png"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="headersection " id="fixed_nav">
+    <div class="container-fluid navcontainer">
+      <nav class=" navbar navbar-expand-lg   navbar-light  navcontainer2 ">
+        <a class="navbar-brand" href="#">CrimeZone</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="fa fa-home nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa fa-support  
+              " href="#">  Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa fa-sun-o  
+              " href="#"> Notifications</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fa fa-cogs" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Settings</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Security</a>
+                 <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Delete Account</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa fa-send-o
+              " href="#"data-toggle="modal" data-target="#createpost" > Create Post</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <!-- modal for creating post -->
+  <div class="modal animate" id="createpost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Write about crime</h5>
+        </div>
+        <div class="modal-body">
+         <form>
+          <div class="form-group">
+           <textarea class="form-control" aria-label="With textarea"></textarea>
+           <div><hr></div>
+           <div class="fileload fright">
+            <a class="fa fa-file-photo-o" href=""></a>
+            <a class="fa fa-film" href=""></a>
+            <a class="fa fa-camera" href=""></a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      <button type="button" class="btn btn-primary">Post</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- modal for creating post end -->
+<div class=" maincontainer container-fluid">
+  <div class="col-md-3 left_sidebar">
+    <div class="total-pp">
+      <div class="user-profile-background">
+        <div class="user-profile-pp">
+          <img src="image/fav.png">
+        </div>
+        <div class="user-pp">
+          <h5 class="name">Md.Imam Hossain Roni</h5>
+          <p class="email">Email:imam@gmail.com</p>
+          <p class="fa fa-map-marker loc"> Dhaka</p>
+          <p class="fa fa-clock-o datetime" > Joining time</p>
+        </div>
+        <div class="option">
+          <p>  <a  class="fa fa-th menu" href="user.html"></a></p>
+        </div>
+        <div class="border"></div>
+        <div class="other">
+          <p><a href="">Who's viewed your profile</a> 100</p>
+          <p><a href="">Views of your post</a> 45</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 main_content">
+    <div class="card">
+      <div class="card-header">
+        <div class="col-2 profile_picture"><img src="image/profile_image.jpg" alt=""></div>
+        <div class="col-10 friend_name">
+          <div class="friend_name_description">
+            <a href="#">FRIEND NAME  </a><i class="fa fa-globe"></i>
+            <br>
+            <p class="fa fa-clock-o 
+            "> Today at 19.33</p>
+            <p class="fa fa-map-marker location"> at Uttara</p>
+          </div>
+
+          <div class="modal_content">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="fa fa-cog settingslogo" data-toggle="modal" data-target="#myModal"></button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                   <h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 </div>
+                 <div class="modal-body">
+                  <p><a href="#">Hide from timeline</a></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="card-body main_content">
+      <p>Progressively harness competitive partnerships vis-a-vis efficient users. Continually morph state of the art scenarios without client-focused infrastructures. Distinctively predominate one-to-one value whereas client-focused experiences. Conveniently simplify.<a class="readmore" href="">Read More</a>
+      </p>    
+      <p><img src="image/post.jpg" alt=""></p>
+    </div>
+    <div class="card-footer">
+      <form>
+        <div class="col-4 like">
+          <a  class="fa fa-star-o likebutton" href="#"> Star</a>
+        </div>
+        <div class="col-6 comment ">
+          <a class="fa fa-comment-o commentbutton" href="#"> Comment</a>
+        </div>
+        <div class="col-2 share">
+          <a class="fa fa-share-alt sharebutton" href="#"> Share</a>
+        </div>
+        <div class="space"></div>
+        <div class="form-group write-comment">
+          <i class="fa fa-comments-o icon"></i>
+          <input type="email" class="form-control commentbox"  placeholder="Say something ">
+        </div>
+
+        <div class="comment-show">
+          <div class="comment-pp"><img src="image/profile_image.jpg" alt=""></div>
+          <div class="comment-txt">
+            <p class="comment-user-name"><a href=""><b>FriendName</b></a> It was awesome</p>
+          </div>
+        </div>
+
+        <div class="comment-show">
+          <div class="comment-pp"><img src="image/profile_image.jpg" alt=""></div>
+          <div class="comment-txt">
+            <p class="comment-user-name"><a href=""><b>FriendName</b></a> It was awesome</p>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 right_sidebar ">
+  <div class="total-rr ">
+    <div class="first-rr">
+      <p class="feed">Add To Your Feed</p>
+      <hr>
+      <div class="follower-show-border">
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+        <div class="follower-show">
+          <div class="follower-pp"><img src="image/fav.png" alt=""></div>
+          <div class="follower-txt">
+            <p class="follower-name">FriendName<button class="fright follow-button">Follow</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="second-rr">
+
+  </div>
+</div>
+</div>
+
+
+
+<!-- static file -->
+<script src="js/jquery.js"></script>
+<script src="js/fontawesome.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<!-- static file end -->
+</body>
+</html>
+
