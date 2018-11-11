@@ -147,6 +147,11 @@ button{
   border-radius: 2px;
   margin-bottom: 2px;
 }
+
+.comment-reply p{
+  margin: 0;
+  padding: 0;
+}
 .comment-pp img{
  display: block;
  width: 25px;
@@ -273,26 +278,28 @@ button{
 }
 /*chatting*/
 .conversation{
+  margin-bottom: 140px;
+    margin-top: 50px;
   overflow-x: auto;
 }
 .receivercontainer::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 .receivercontainer{
-    border: 2px solid #dedede;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
 }
 .receivercontainer img{
-   float: left;
-    max-width: 60px;
-    width: 100%;
-    margin-right: 20px;
-    border-radius: 50%;
+ float: left;
+ max-width: 60px;
+ width: 100%;
+ margin-right: 20px;
+ border-radius: 50%;
 }
 .time-right{
   float: right;
@@ -303,40 +310,51 @@ button{
   color:#ADD8E6;
 }
 .sendercontainer::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 } 
 .sendercontainer {
-    border: 2px solid #dedede;
-    background-color: #FFFFF1;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
+  border: 2px solid #dedede;
+  background-color: #FFFFF1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
 }
 .sendercontainer  img{
-   float: right;
-    max-width: 60px;
-    width: 100%;
-    margin-right: 20px;
-    border-radius: 50%;
-    margin-right: 0px;i
+ float: right;
+ max-width: 60px;
+ width: 100%;
+ margin-right: 20px;
+ border-radius: 50%;
+ margin-right: 0px;i
 }
 .sendingbox{
-    position: fixed;
-    bottom: 0;
-    width: 603px;
-    z-index: 999;
-    background: whitesmoke;
+  position: fixed;
+  bottom: 0;
+  width: 603px;
+  z-index: 999;
+  background: whitesmoke;
 }
- 
+
 .sendingbox button{
   margin-top: 5px;
   float: right;
- 
+
 }
 .chat-title{
+  width: 603px;
+  height: 50px;
   color: gray;
+  background: whitesmoke;
+  /*background-color: #EBF2FF;*/
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  top:1;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 3px;
 }
 .chat{
   margin-bottom: 5px;
