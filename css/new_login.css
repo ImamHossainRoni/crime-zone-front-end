@@ -1,0 +1,46 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #b3135c !important;
+}
+
+.btn-info {
+  background-color: #1893a8;
+  border-color: #1893a8;
+}
+
+.btn-primary {
+  background-color: #b3135c;
+  border-color: #b3135c;
+}
+
+.btn-primary:active {
+  background-color: #b3135c;
+  border-color: #b3135c;
+}
+
+.btn-primary:focus {
+  background-color: #b3135c;
+  border-color: #b3135c;
+}
+
+.btn-primary:hover {
+  background-color: #970749;
+  border-color: #970749;
+}
+
+.login-form > .form-group > .form-control,
+.col > .form-control {
+  height: calc(2em + 1rem + 3px);
+}
