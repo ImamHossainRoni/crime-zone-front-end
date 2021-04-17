@@ -39,8 +39,3 @@ a:hover {
   background-color: #970749;
   border-color: #970749;
 }
-
-.login-form > .form-group > .form-control,
-.col > .form-control {
-  height: calc(2em + 1rem + 3px);
-}
